@@ -15,7 +15,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git 'https://github.com/Saahiti-Korlam/Swiggy-project-Devops.git'
+                git branch: 'main', url: 'https://github.com/Saahiti-Korlam/Swiggy-project-Devops.git'
             }
         }
         stage('Sonarqube Check'){
